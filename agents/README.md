@@ -1,15 +1,9 @@
 # Agent Role Contracts
 
-These files describe roles, not executable agents. Adapt them to your runtime and enforce permissions outside the prompt.
+This directory contains role definitions for the operating model:
 
-Every deployed role should have:
-- a named human owner;
-- mission and non-goals;
-- allowed inputs and data scope;
-- permitted tools and operations;
-- explicit prohibitions;
-- required outputs and evidence;
-- escalation and stop conditions;
-- measurable quality and outcome criteria.
+- [Muse — AI CEO](executives/muse-ai-ceo.md): coordinates approved company execution.
+- [Claude — Shadow of the Board](governance/claude-shadow-of-the-board.md): challenges consequential reasoning for the Human Board.
+- [Departments](departments/README.md): specialist workers with bounded mandates.
 
-Start with the [AI CEO](executives/ai-ceo.md), [reviewer](executives/reviewer.md), and one specialist.
+The Human Board is a human role, not an agent. Claude's Shadow function is advisory and must not be given executive or approval authority by implication.

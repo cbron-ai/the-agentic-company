@@ -1,6 +1,6 @@
 # Operating Cadence
 
-The Board should not monitor every worker run. Muse summarizes exceptions and surfaces decisions that genuinely need Board attention.
+The Human Board should not monitor every worker run. Muse summarizes exceptions and surfaces decisions that genuinely need Board attention. Claude challenges important recommendations when requested or required by policy.
 
 ## Daily exception report
 
