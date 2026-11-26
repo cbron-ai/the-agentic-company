@@ -1,35 +1,47 @@
 # Getting Started
 
-This guide sets up a minimal, supervised agentic operating model. It is intentionally runtime-neutral.
+This walkthrough creates the smallest useful version of the model: one Human Board, Muse as AI CEO, Claude as Shadow of the Board, and one specialist worker. It does not require a specific agent framework.
 
-## 1. Define the company
+## 1. Establish the Board charter
 
-Copy [company-charter.md](../templates/company-charter.md). Identify one real customer segment, one problem, one offer, and the human accountable owner.
+Copy [the company charter](../templates/company-charter.md). Name the accountable human, customer, business outcome, project boundaries, reserved decisions, budget, and stop procedure. Do not connect write-capable tools before the charter is approved.
 
-## 2. Define reserved decisions
+## 2. Configure Muse
 
-Review [decision-rights.md](../docs/decision-rights.md). Set explicit spend, publication, deployment, and data boundaries before connecting tools.
+Use [Muse's role contract](../agents/executives/muse-ai-ceo.md). Give it only the tools and permissions needed to coordinate approved work. Keep budget and permission changes outside its authority.
 
-## 3. Create the coordinator
+## 3. Configure Claude as Shadow
 
-Use [AI CEO role](../agents/executives/ai-ceo.md). Treat it as a planning and delegation role, not an autonomous executive with unlimited authority.
+Use [Claude's role contract](../agents/governance/claude-shadow-of-the-board.md). Give Claude the decision brief and evidence needed to challenge proposals. Do not give the Shadow operational write access by default. The Board—not Claude—decides.
 
-## 4. Add one worker
+## 4. Add one specialist worker
 
-Choose one recurring, low-risk task and adapt a role under [agents/departments](../agents/departments/README.md).
+Select one recurring, low-risk task. Define its inputs, outputs, allowed data/tools, acceptance tests, budget, and escalation conditions using [the agent contract template](../templates/agent-role.md).
 
-## 5. Configure tools safely
+## 5. Set up records
 
-Start read-only. Use separate identities and sandbox environments. Do not paste production credentials into prompts or repository files.
+Use a durable location for the charter, project briefs, decision records, approval requests, costs, and incident reports. Keep project execution separate from Board-level decisions. Do not assume instructions transfer between projects.
 
 ## 6. Run one workflow
 
-Start with [project intake](../workflows/project-intake/README.md) or [task delegation](../workflows/task-delegation/README.md). Require review before any external or irreversible action.
+Start with [project intake](../workflows/project-intake/README.md) or [task delegation](../workflows/task-delegation/README.md). Require artifact-based verification. External, financial, destructive, and production actions stay behind the required Board approval gate.
 
-## 7. Review the first week
+## 7. Review actual outcomes
 
-Use the [weekly report](../templates/weekly-report.md) and [cost report](../templates/cost-report.csv). Decide whether the workflow produced measurable value and whether it is safe to continue.
+Use the [weekly Board memo](../templates/weekly-report.md). Track customer outcomes, quality, cash spend, allocated costs, Board time, and risks. Stop or change work that lacks an evidence-based path to value.
 
-## Completion criteria
+## Validate the sample records
 
-You should be able to explain who owns the outcome, what each agent can access, what requires approval, how to stop the workflow, how much it costs, and how quality is measured.
+Install Node.js 20 or newer, then run:
+
+```bash
+npm install
+npm test
+npm run validate
+```
+
+The validator checks the example JSON records against the repository schemas. It does not enforce permissions in your agent runtime; technical enforcement remains your responsibility.
+
+## Ready-to-operate checklist
+
+You can explain who owns each outcome, what Muse may decide, what Claude may challenge, what the Board reserves, what each worker can access, how approvals expire, how costs are measured, how work is verified, and how to stop the system.

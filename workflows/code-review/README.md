@@ -1,10 +1,11 @@
 # Workflow: Code Review
 
 1. Engineer works in an isolated branch and scoped repository.
-2. Engineer runs relevant tests and records exact commands/results.
-3. Reviewer checks diff against acceptance criteria, tests, security, dependencies, and scope.
-4. Blocking findings are fixed and re-reviewed.
-5. Human or protected repository process authorizes merge.
-6. Record commit, review outcome, test evidence, and known risks.
+2. Engineer records the requirement, changed files, tests, commands, and results.
+3. A reviewer receives the original requirement and full diff—not merely the author's summary.
+4. Reviewer checks correctness, scope, security, dependency risk, failure handling, and test coverage.
+5. Blocking findings are fixed and re-reviewed.
+6. Merge occurs only through the repository's protected process and required human approval.
+7. Record commit, review outcome, test evidence, and known residual risks.
 
-Never expose production secrets to an agent. Do not treat passing tests as proof that a change is safe.
+Claude's Shadow role is not a replacement for technical code review. Never expose production secrets to an agent.

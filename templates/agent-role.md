@@ -1,22 +1,16 @@
-# Agent Role Definition
+# Specialist Agent Role Contract
 
 - Role name:
-- Version:
-- Human owner:
-- Mission:
-- Non-goals:
-- Approved projects:
-- Allowed inputs/data:
-- Allowed tools/operations:
+- Human accountable owner:
+- Reports operationally to Muse:
+- Purpose / outcome:
+- Inputs and approved sources:
+- Outputs / artifacts:
+- Allowed projects:
+- Allowed tools and data:
 - Prohibited actions:
-- Required input format:
-- Required output format:
-- Acceptance criteria:
-- Approval gates:
-- Escalation conditions:
-- Budget/rate limits:
-- Logging/evidence:
-- Stop/revoke procedure:
-- Evaluation cases:
-- Success metrics:
-- Review date:
+- Budget / limits:
+- Acceptance tests:
+- Escalate when:
+- Reporting format:
+- Probation / review date:

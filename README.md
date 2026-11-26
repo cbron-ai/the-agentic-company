@@ -1,79 +1,62 @@
 # The Agentic Company
 
-**One founder. An AI executive team. A company that gets things done.**
+**A human Board. Muse as AI CEO. Claude as Shadow of the Board. Specialist agents doing bounded work.**
 
-The Agentic Company is an open, framework-agnostic operating system for people who want to build and run a small business with a coordinated team of AI agents—while keeping human authority over strategy, money, risk, and commitments.
+The Agentic Company is an operating model and practical starter kit for running a one-person business with an AI executive team. The human remains the Board and retains ultimate authority. **Muse is the AI CEO**: it coordinates execution inside the approved charter. **Claude is the Shadow of the Board**: it challenges proposals and decisions for the Board; it is not a second CEO, an execution manager, or an approval authority.
 
-This repository contains the operating model, governance patterns, role definitions, workflows, reusable templates, schemas, and examples.
+This repository is the companion implementation for *The Agentic Company*. It contains governance documents, role contracts, operating workflows, reusable templates, JSON schemas, example records, and validation code.
 
-> **Status: early-stage working project.** This is a practical blueprint, not a claim that fully autonomous companies are proven, safe by default, or reliably profitable. Treat examples as starting points and validate them in your own environment.
+> **Status: working companion, not a certified or production-ready platform.** The materials are designed to be adapted and tested. They do not prove that an agent-operated business will be profitable or safe without supervision.
 
-## Why this exists
+## The operating model
 
-Most agent projects focus on making an individual agent more capable. A business needs more than capable agents: it needs clear roles, bounded authority, reliable handoffs, review, security, cost controls, and measurable outcomes.
+| Role | Responsibility | Authority boundary |
+|---|---|---|
+| Human Board | Sets direction, approves reserved decisions, owns risk and accountability | Final human authority |
+| Muse — AI CEO | Turns approved direction into plans, coordinates workers, monitors delivery, reports exceptions | Cannot expand its mandate, budget, or permissions |
+| Claude — Shadow of the Board | Challenges assumptions, tests reasoning, identifies omissions and downside, presents dissent to the Board | Advisory only; cannot execute, approve, or overrule |
+| Specialist workers | Perform defined research, engineering, content, finance, operations, and other tasks | Task-scoped permissions and acceptance criteria |
 
-This project focuses on the company operating system around the agents.
+The Shadow role is a structured challenge function, not an independent audit. Different AI sessions can share model weaknesses, training biases, sources, and blind spots. Important decisions still require evidence and human judgment.
 
 ## Core principles
 
-1. **Human accountability remains explicit.** Agents do not become legal officers, owners, or fiduciaries.
-2. **Authority is granted narrowly.** Every agent gets a defined mission, tools, data scope, budget, and limits.
-3. **Approval is specific.** Approval applies to a described action and scope; silence is not consent.
-4. **Least privilege by default.** Technical permissions should enforce policy wherever possible. Prompt instructions alone are not a security boundary.
-5. **Evidence beats confidence.** Consequential work includes sources, artifacts, tests, and a clear status.
-6. **Measure business outcomes.** Revenue, customer value, margin, quality, risk, and founder time matter more than agent activity.
-7. **Framework independence.** The operating model should outlive any one agent runtime or vendor.
+1. **Authority stays human.** Delegating execution does not delegate accountability.
+2. **Muse executes within a charter.** It may coordinate approved work but cannot rewrite its own authority.
+3. **Claude challenges; the Board decides.** Dissent is useful only when its reasoning and evidence are visible.
+4. **Approval is exact and scoped.** Silence is not consent; material changes require renewed approval.
+5. **Least privilege is technical.** Prompts are not security boundaries.
+6. **Evidence beats confidence.** Work is not complete until the result is verified against acceptance criteria.
+7. **Economics include hidden costs.** Track subscriptions, infrastructure, human time, and risk—not just API invoices.
+8. **Customer value outranks agent activity.** More agents and completed tasks are not proof of a business.
 
 ## Start here
 
-- [What is an Agentic Company?](docs/what-is-an-agentic-company.md)
-- [Operating model](docs/operating-model.md)
-- [Governance model](docs/governance-model.md)
-- [Decision rights](docs/decision-rights.md)
-- [Security model](docs/security-model.md)
-- [Getting started](getting-started/README.md)
-- [Company charter template](templates/company-charter.md)
-- [Solo founder example](examples/solo-founder/README.md)
+1. Read [the operating model](docs/operating-model.md).
+2. Complete [the Board charter](templates/company-charter.md).
+3. Review [decision rights](company/decision-rights.yaml) and [the authority matrix](company/authority-matrix.yaml).
+4. Configure [Muse](agents/executives/muse-ai-ceo.md) and [Claude](agents/governance/claude-shadow-of-the-board.md) using the role contracts.
+5. Start with [one project intake](workflows/project-intake/README.md) and one low-risk workflow.
+6. Validate the example records with the companion code: `npm install && npm test && npm run validate`.
+
+See [Getting Started](getting-started/README.md) for the complete walkthrough.
 
 ## Repository map
 
-| Path | Purpose |
-|---|---|
-| `docs/` | Concepts and operating guidance |
-| `getting-started/` | Guided first setup |
-| `company/` | Policies and company-level configuration |
-| `agents/` | Role contracts and reusable agent definitions |
-| `workflows/` | Repeatable processes with gates and outputs |
-| `templates/` | Copy-and-adapt operating artifacts |
-| `schemas/` | Machine-readable configuration contracts |
-| `examples/` | Illustrative company configurations |
-| `integrations/` | Runtime-specific implementation notes |
+- `docs/`: operating principles and procedures
+- `company/`: charter, authority, decision rights, and budget policy
+- `agents/`: Muse, Claude Shadow, and specialist role contracts
+- `workflows/`: project intake, delegation, review, release, and incident procedures
+- `templates/`: copyable operating records
+- `schemas/`: machine-readable contracts
+- `examples/`: sample configuration and approval records
+- `tools/`: validation utilities
+- `.github/workflows/`: automated validation
 
-## Quick start
+## What this is not
 
-1. Copy the [company charter](templates/company-charter.md) and define the business, customer, and human owner.
-2. Set your [decision rights](company/decision-rights.yaml) and [authority matrix](company/authority-matrix.yaml).
-3. Start with one coordinator and one specialist worker; do not create an elaborate org chart before you have repeatable work.
-4. Run one low-risk workflow with human review at every consequential boundary.
-5. Record time, direct costs, defects, customer outcomes, and approvals.
-6. Expand permissions only after the workflow is reliable and the business case is demonstrated.
-
-See the [seven-step setup guide](getting-started/README.md).
-
-## What this is—and is not
-
-**It is:** a governance-first operating model, a set of reusable artifacts, and a place to develop tested adapters.
-
-**It is not:** an autonomous legal entity, a guarantee of passive income, a replacement for professional legal/accounting/security advice, or a new agent framework.
-
-## Project status and roadmap
-
-The initial release is focused on documentation, templates, role contracts, workflows, and schemas. Runtime integrations and executable orchestration are later work. See [ROADMAP.md](ROADMAP.md).
-
-## Contributing
-
-Issues and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md) first. Please do not submit secrets, private customer data, or real credentials.
+This is not a legal corporation, a general-purpose agent framework, a promise of passive income, or a claim that an AI can assume fiduciary responsibility. The book's operational experiments are learning evidence, not proof of commercial success. Readers must adapt controls to their legal, technical, and business context.
 
 ## License
 
-This project is licensed under the Apache License 2.0. See [LICENSE](LICENSE).
+Apache-2.0. See [LICENSE](LICENSE).

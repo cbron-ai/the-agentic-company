@@ -1,39 +1,33 @@
-# Weekly Operating Report
+# Weekly Board Memo
 
 - Week:
-- Human owner:
+- Prepared by Muse:
 - Overall status:
+- Board decisions required:
 
-## Outcomes
-- Customer/business outcomes:
-- Deliverables accepted:
-- Evidence links:
-
-## Delivery
-- Completed:
-- In progress:
-- Blocked:
-- Rework/defects:
-
-## Economics
-- Revenue:
-- Direct costs:
-- Subscription/infrastructure estimates:
-- Human hours:
-- Budget variance:
-
-## Risk and governance
-- Approvals needed:
+## Exceptions and urgent issues
+- Customer/production impact:
+- Blockers:
 - Incidents:
-- Permission changes:
-- Security/privacy concerns:
+- Budget/risk threshold breaches:
 
-## Decisions
-- Decision needed:
-- Options:
-- Recommendation:
-- Deadline:
+## Project scorecards
+For each project: target, actual, customer evidence, revenue, cash spend, allocated subscription/infrastructure cost, quality, open risks, next milestone, and Board decision required.
 
-## Next week
-- Top priorities:
-- Stop/defer:
+## Company-level economics
+- Cash costs:
+- Allocated subscription costs:
+- Infrastructure/tools:
+- Founder/Board hours:
+- Revenue and gross margin:
+- Forecast vs actual:
+
+## Recommendations and challenge
+- Muse recommendation:
+- Claude Shadow objections / counter-case:
+- Evidence gaps:
+- Board decision and rationale:
+
+## Next period
+- Priorities:
+- Stop / pause / defer:

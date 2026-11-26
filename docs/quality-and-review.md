@@ -1,16 +1,23 @@
-# Quality and Review
+# Quality, Challenge, and Verification
 
-Define acceptance criteria before work starts. Review the artifact against the criteria, not against how confident the agent sounds.
+## Separate three functions
 
-A useful review asks:
-- Does the result solve the stated customer/business problem?
-- Are factual claims supported by trustworthy evidence?
-- Are assumptions and unknowns visible?
-- Do tests cover expected and failure paths?
-- Are security, privacy, and licensing implications addressed?
-- Is the output complete, usable, and within scope?
-- Is there a recovery path if the action fails?
+1. **Verification:** objective checks against acceptance criteria—tests, measurements, source validation, screenshots, logs, or customer evidence.
+2. **Review:** a qualified reviewer inspects the artifact and the original requirement for omissions, defects, unsafe assumptions, and policy mismatches.
+3. **Board challenge:** Claude, as Shadow of the Board, challenges consequential reasoning and recommendations before the Board decides.
 
-For code, require relevant automated tests, static checks, dependency review, and human review for sensitive changes. For external content, verify claims, links, audience fit, and brand risk.
+These functions are related but not interchangeable. Claude is not automatically an independent reviewer of every worker output, and its agreement does not prove correctness.
 
-Record defects and rework. Repeated review failure is a signal to change the workflow, not simply add more agents.
+## Risk-based controls
+
+- Low risk: internal drafts and reversible experiments; automated checks may be sufficient.
+- Moderate risk: code changes, analytics, and reversible operational changes; require tests and a separate review.
+- High risk: external marketing, customer data, payments, legal content, security, production data, and destructive changes; require explicit human approval and verifiable evidence.
+
+## Required review output
+
+State the original criteria, evidence inspected, checks performed, defects, severity, residual risks, uncertainty, and recommendation. Distinguish blocking defects from optional improvements.
+
+## Evidence rule
+
+Do not accept “done” as proof. Link the artifact and verification evidence. State what was not tested or could not be verified.

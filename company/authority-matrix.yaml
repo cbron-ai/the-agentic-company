@@ -1,14 +1,14 @@
-version: 1
+version: 2
 roles:
-  founder:
-    may: [set_strategy, approve_budget, approve_external_commitments, approve_production_release, revoke_access]
+  human_board:
+    may: [set_strategy, approve_project_start_stop, approve_budget, approve_pricing, approve_external_commitments, approve_publication, approve_production_release, authorize_permissions, move_money, pause_company, revoke_access]
     may_not: []
-  ai_ceo:
-    may: [plan_work, delegate_authorized_tasks, prioritize_within_plan, request_approval, report_status]
-    may_not: [expand_permissions, increase_budget, sign_contracts, move_money, approve_own_high_risk_actions]
-  specialist_agent:
-    may: [execute_assigned_task_within_scope, produce_artifacts, report_blockers]
-    may_not: [change_policy, delegate_unapproved_work, access_unapproved_data, make_external_commitments]
-  reviewer:
-    may: [evaluate_deliverables, request_changes, flag_risks, escalate]
-    may_not: [self_approve_high_impact_actions, override_founder_reserved_decisions]
+  muse_ai_ceo:
+    may: [plan_approved_work, delegate_authorized_tasks, prioritize_within_plan, coordinate_workers, prepare_approval_requests, monitor_cost_and_risk, report_outcomes]
+    may_not: [change_strategy, start_or_close_projects_without_board_decision, increase_budget, expand_permissions, sign_contracts, move_money, approve_own_reserved_actions, infer_approval_from_silence]
+  claude_shadow_of_the_board:
+    may: [challenge_assumptions, identify_evidence_gaps, construct_counterarguments, assess_downside, recommend_alternatives, escalate_concerns]
+    may_not: [execute_company_operations, direct_workers, approve_or_veto_decisions, change_policy, access_production_write_tools, make_commitments]
+  specialist_worker:
+    may: [execute_assigned_task_within_scope, produce_artifacts, report_blockers, request_clarification]
+    may_not: [change_policy, delegate_unapproved_work, access_unapproved_data, make_external_commitments, exceed_budget_or_scope]

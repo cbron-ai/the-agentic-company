@@ -1,20 +1,21 @@
 # Workflow: Task Delegation
 
-**Owner:** AI CEO within founder-approved plan
+**Accountable authority:** Human Board  
+**Coordinator:** Muse — AI CEO
 
 ## Steps
-1. Define one observable outcome.
-2. Identify the smallest task and suitable authorized role.
-3. Provide context, inputs, constraints, tools, deadline, budget, and acceptance criteria.
-4. Confirm dependencies and risk level.
-5. Assign task and record its identifier.
-6. Worker executes and returns artifact plus evidence.
-7. Reviewer checks criteria and policy.
-8. AI CEO accepts, requests changes, or escalates.
-9. Update project status and record cost/learning.
 
-## Required task fields
-Outcome, owner, assignee, scope, inputs, allowed tools/data, deadline, budget, risk, acceptance criteria, approval requirements, evidence location.
+1. Muse identifies an approved outcome and checks the current charter.
+2. Define the smallest observable task and a single accountable owner.
+3. Select a worker with the required mandate and permissions.
+4. Provide context, inputs, allowed tools/data, deadline, budget, risk, and acceptance criteria.
+5. Confirm dependencies and approval gates.
+6. Assign and record a unique task identifier.
+7. Worker executes and returns artifact, evidence, cost, and uncertainty.
+8. Muse coordinates verification; a reviewer checks the artifact against the original criteria.
+9. Claude challenges consequential recommendations when requested or required.
+10. Muse updates project status and escalates reserved decisions to the Board.
 
 ## Stop conditions
-Missing permission, ambiguous scope, budget threshold, sensitive data, external action, or inability to verify result.
+
+Missing permission, ambiguous scope, budget threshold, sensitive data, external action, unexpected side effect, or inability to verify the result.

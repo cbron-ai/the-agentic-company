@@ -1,18 +1,16 @@
 # Agent Lifecycle
 
-Agents are operational components, not employees or legal persons.
+Treat each specialist role as an operating investment.
 
-## Create
-Create a role only for recurring work with a clear owner, measurable output, and justified tool access.
+## Before adding a worker
 
-## Evaluate
-Use a sandbox and test normal cases, edge cases, malicious inputs, and prohibited actions. Verify permissions technically.
+- identify repeated work and current cost;
+- define measurable output and acceptance tests;
+- estimate setup, runtime, review, maintenance, and allocated subscription costs;
+- specify systems and data access;
+- define manager, reporting format, escalation, and probation period;
+- obtain Board approval for new access or spend.
 
-## Operate
-Monitor quality, cost, latency, failure rate, and business outcomes. Keep a human owner accountable.
+## Pausing and retiring
 
-## Change
-Version role instructions and tool scopes. Review material changes before rollout.
-
-## Pause or retire
-Pause on unexplained external actions, repeated quality failures, suspected compromise, budget breach, or loss of business need. Revoke credentials and preserve necessary audit records. Remove unused access promptly.
+Stop schedules, check in-flight work, archive required artifacts, revoke credentials, remove repository/application access, and verify the worker cannot restart. Preserve evidence required for incident review or customer obligations.

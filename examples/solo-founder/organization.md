@@ -1,14 +1,10 @@
 # Example Organization
 
-Human Founder
-- Accountable for mission, budget, risk, customer promises, and reserved decisions.
+This is an illustrative structure, not a claim of proven profitability.
 
-AI CEO / Coordinator
-- Plans work, delegates authorized tasks, consolidates evidence, requests approvals.
+- Human Board: one human; owns strategy, approvals, risk, and accountability.
+- Muse: AI CEO; coordinates approved work and reports to the Board.
+- Claude: Shadow of the Board; challenges consequential proposals and decisions; advisory only.
+- Specialist workers: added only for recurring, bounded tasks with measurable outputs.
 
-Specialists
-- Market Researcher: evidence gathering only.
-- Software Engineer: sandbox implementation only.
-- Reviewer: quality and risk review.
-
-No role has authority to expand its own permissions or approve its own high-impact actions.
+The example intentionally starts with one project and one worker. Expand only when evidence supports the added coordination cost.

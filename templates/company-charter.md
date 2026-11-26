@@ -1,59 +1,68 @@
 # Company Charter
 
-## Ownership and accountability
+## Ownership and Board
 - Legal/business owner:
+- Human Board member(s):
 - Accountable human:
-- Business jurisdiction (if relevant):
-- Charter version / review date:
+- Charter version / effective date / review date:
 
 ## Mission and customer
 - Mission:
 - Target customer:
-- Customer problem:
+- Customer problem and evidence:
 - Current alternatives:
 - Offer / value proposition:
+- Primary business outcome:
 
-## Operating boundaries
-- Approved projects:
-- Approved data sources:
-- Approved tools:
-- Prohibited data/actions:
-- Risk appetite:
+## Operating roles
+- Human Board:
+- Muse — AI CEO:
+- Claude — Shadow of the Board:
+- Specialist workers:
+- Human escalation contact:
 
-## Reserved human decisions
+## Board-reserved decisions
 - Strategy and business model:
-- Contracts/legal representations:
-- Hiring/firing:
-- Money movement/payroll/tax:
-- New spend and subscriptions:
-- External customer communication:
-- Public publishing:
+- Project starts, pauses, and closures:
+- New spending, budgets, renewals, and pricing:
+- Contracts and legal commitments:
+- Permissions, credentials, and policy changes:
+- External publication and customer communication:
 - Production deployment:
-- Destructive operations:
-- Agent permissions/policy changes:
+- Money movement, payroll, tax, and ownership:
+- Destructive operations and risk exceptions:
+
+## Delegated operating authority
+- Routine decisions Muse may make:
+- Specialist tasks permitted:
+- Pre-approved external actions (exact scope):
+- Prohibited actions:
+
+## Security and information
+- Approved systems/data:
+- Prohibited data/actions:
+- Identity and environment isolation:
+- Secret management:
+- Audit/evidence location:
+- Stop and credential-revocation procedure:
 
 ## Financial controls
-- Monthly budget:
-- Per-workflow limits:
-- Alert threshold:
-- Hard stop:
+- Monthly cash budget:
+- Metered spend cap:
+- Allocated subscription method:
+- Infrastructure allowance:
+- Alert and hard-stop thresholds:
 - Approval process:
 
-## Success metrics
+## Metrics and cadence
 - Customer outcome:
-- Revenue/margin:
-- Quality/defects:
-- Founder time:
-- Retention:
-- Risk indicators:
-
-## Governance
-- Human approval channel:
-- Audit/evidence location:
-- Stop/revoke procedure:
-- Review cadence:
-- Incident contact:
+- Revenue / gross margin:
+- Quality / rework:
+- Board time:
+- Daily exception report:
+- Weekly operating review:
+- Monthly portfolio review:
 
 ## Sign-off
-- Human owner:
+- Human Board approval:
 - Date:

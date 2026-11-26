@@ -1,20 +1,19 @@
 # Decision Rights
 
-The founder retains reserved decisions. Delegation should be explicit and narrow.
+| Decision | Default authority | Muse | Claude Shadow |
+|---|---|---|---|
+| Mission, strategy, target customer | Human Board | Research and recommend | Challenge assumptions and alternatives |
+| Start, pause, or close a project | Human Board | Prepare evidence and options | Stress-test rationale |
+| Budget, new spend, pricing | Human Board | Forecast and monitor | Challenge economics and downside |
+| Contracts and legal commitments | Human Board with qualified advice | Draft and identify issues | Flag risks; not legal counsel |
+| Credentials, permissions, policy changes | Human Board / designated human operator | Propose least-privilege changes | Challenge threat model |
+| Routine task assignment | Muse within approved plan | Own and report | No operational authority |
+| Specialist task execution | Authorized worker | Delegate and coordinate | No operational authority |
+| Quality verification | Defined reviewer/test process | Ensure criteria are met | Challenge important conclusions |
+| External publication/customer contact | Human approval unless exact pre-authorization exists | Prepare and execute only within approved scope | Challenge message and claims |
+| Production deployment | Human approval by default | Prepare release and execute only when authorized | Challenge release risk |
+| Money movement, payroll, tax, ownership | Human only | Prepare information | Challenge reasoning; never act |
 
-| Decision/action | Default authority | Notes |
-|---|---|---|
-| Research and internal drafts | Authorized worker | Stay within approved data scope |
-| Internal task prioritization | AI CEO | Within approved goals and capacity |
-| Code changes in sandbox/branch | Engineering worker | Tests and review required |
-| Merge to protected main | Human or configured protected process | Never rely only on prompt compliance |
-| Production deployment | Human approval by default | Approval must identify service, version, window, and rollback |
-| External customer communication | Human approval by default | Pre-approved low-risk templates may be separately authorized |
-| Public publishing/social posts | Human approval by default | Brand and factual review required |
-| Spend or subscription purchase | Human approval | Define amount, vendor, and period |
-| Refunds, transfers, payroll, taxes | Human only | Legal/financial consequences |
-| Contracts, legal representations, hiring/firing | Human only | Obtain qualified advice as appropriate |
-| Deleting data or destructive infrastructure changes | Human approval | Backup and recovery evidence required |
-| Changing agent permissions or policies | Human only | Log the change and test it |
+## Approval record
 
-This table is a conservative default, not legal advice. Adapt it to the business and enforce it technically.
+Record who approved, the exact action and target, version/hash where possible, amount/exposure, scope, evidence reviewed, timestamp, expiry, and conditions. A changed artifact or target requires renewed approval.

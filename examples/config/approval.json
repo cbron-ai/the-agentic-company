@@ -1,0 +1,12 @@
+{
+  "requestId": "APR-0001",
+  "action": "publish",
+  "target": "example.com/launch-draft-v1",
+  "scope": ["Publish exact reviewed version v1", "No edits after approval"],
+  "requestedBy": "Muse",
+  "maxCost": 0,
+  "expiresAt": "2027-01-01T00:00:00Z",
+  "decision": "pending",
+  "decidedBy": null,
+  "decidedAt": null
+}

@@ -1,0 +1,12 @@
+{
+  "name": "project-alpha",
+  "humanOwner": "Human Board",
+  "desiredOutcome": "Determine whether a defined customer segment has a repeated, costly problem.",
+  "scope": ["Interview preparation", "Public market research"],
+  "outOfScope": ["Paid advertising", "External outreach", "Product build"],
+  "acceptanceCriteria": ["At least 10 relevant source records", "Evidence and counter-evidence summarized"],
+  "riskLevel": "low",
+  "budget": 0,
+  "approvalGates": ["Board approval before contacting prospects"],
+  "stopCondition": "Stop if sources require unauthorized access or personal data."
+}

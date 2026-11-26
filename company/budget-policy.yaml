@@ -1,11 +1,15 @@
-version: 1
+version: 2
 currency: USD
 policy:
-  default_agent_spend: 0
-  require_human_approval_for_new_spend: true
-  require_human_approval_for_subscription_renewal: true
-  require_human_approval_for_budget_increase: true
-  alert_at_percent: 70
-  hard_stop_at_percent: 100
-  include_human_time_in_unit_economics: true
-  disclose_unmeasured_subscription_costs_as_estimates: true
+  agent_authorized_spend_default: 0
+  require_human_board_approval_for_new_spend: true
+  require_human_board_approval_for_subscription_renewal: true
+  require_human_board_approval_for_budget_increase: true
+  warning_threshold_percent: 80
+  hard_stop_threshold_percent: 100
+  track_metered_cash_cost: true
+  track_allocated_subscription_cost: true
+  track_infrastructure_cost: true
+  track_human_time: true
+  track_risk_and_rework: true
+  unmeasured_costs_must_be_labeled_estimates: true

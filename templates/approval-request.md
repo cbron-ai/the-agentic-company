@@ -1,19 +1,24 @@
-# Approval Request
+# Board Approval Request
 
 - Request ID:
-- Requesting agent / human:
-- Accountable owner:
+- Requested by (Muse / worker):
+- Board decision owner:
+- Decision required by:
 - Exact action:
-- Exact target/resource:
-- Purpose and expected benefit:
-- Scope and limits:
-- Maximum cost/exposure:
-- Time window and expiry:
+- Exact target / artifact version:
+- Audience / environment:
+- Business purpose and expected benefit:
+- Scope and explicit limits:
+- Maximum cash exposure:
+- Allocated and recurring cost:
 - Customer impact:
-- Security/privacy/legal impact:
-- Evidence and alternatives:
-- Tests/review completed:
-- Rollback/recovery plan:
-- What happens if not approved:
-- Requested decision: approve / reject / request changes
-- Human decision and timestamp:
+- Security / privacy / legal impact:
+- Evidence and sources:
+- Claude Shadow challenge memo:
+- Alternatives, including no action:
+- Tests and independent verification:
+- Rollback / recovery plan:
+- Approval expiry:
+- Board decision: approve / reject / revise / defer
+- Conditions:
+- Decided by / timestamp:

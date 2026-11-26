@@ -1,22 +1,24 @@
 # Workflow: Production Deployment
 
-**Default authority:** Human approval required.
+**Default authority:** Human Board approval required.
 
 ## Preparation
-- identify service, environment, version/commit, and change summary;
-- verify CI, tests, security checks, and reviewer findings;
+
+- identify service, environment, exact version/commit, and change summary;
+- verify CI, tests, security checks, and review findings;
 - confirm migration and compatibility plan;
 - define deployment window, expected impact, monitoring, and rollback;
-- state expected cost and customer impact.
+- state cash exposure and customer impact;
+- prepare an immutable approval package.
 
-## Approval
-The human approves the exact service, version, environment, and time window. A material change requires renewed approval.
+## Board approval
 
-## Execution
-Use a deployment identity limited to the approved target. Capture logs and deployment result. Stop on unexpected behavior.
+The Board approves the exact service, version, environment, and time window. A material change requires renewed approval. Claude may challenge the release plan but cannot approve it.
 
-## Verification
-Run health checks and business-critical smoke tests. Compare key metrics against baseline.
+## Execution and verification
+
+Use a deployment identity limited to the approved target. Capture logs and result. Run health checks and business-critical smoke tests. Stop on unexpected behavior.
 
 ## Rollback
-If the agreed trigger is met, follow the approved rollback plan and notify the owner. Preserve evidence and open an incident record.
+
+If the agreed trigger is met, follow the approved rollback plan, notify the Board, preserve evidence, and open an incident record.

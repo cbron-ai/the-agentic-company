@@ -1,22 +1,23 @@
 # Project Brief
 
-- Project name:
-- Human owner:
-- Coordinator:
-- Status:
-- Desired outcome:
-- Target customer/user:
-- Problem and evidence:
+- Project name / ID:
+- Board sponsor / human owner:
+- Muse coordinator:
+- Status: proposed / evidence / approved / active / paused / closed
+- Target customer:
+- Problem and supporting evidence:
+- Current alternatives:
+- Desired customer/business outcome:
+- Offer / value hypothesis:
 - Scope:
 - Out of scope:
 - Deliverables:
 - Acceptance criteria:
 - Dependencies:
-- Allowed tools/data:
-- Risk classification:
-- Budget and cost assumptions:
+- Allowed tools and data:
+- Risk level and rationale:
+- Cash budget / allocated costs:
 - Approval gates:
-- Milestones:
+- Success threshold and deadline:
 - Stop condition:
-- Success metrics:
-- Decision log:
+- Board decision record:

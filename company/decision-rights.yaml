@@ -1,30 +1,43 @@
-version: 1
-default_policy: require_human_approval_for_external_or_irreversible_actions
+version: 2
+default_policy: human_board_approval_for_reserved_or_high_impact_actions
+roles:
+  human_board: final_human_authority
+  muse: ai_ceo_operating_coordinator
+  claude: shadow_of_the_board_advisory_only
 rules:
   - action: internal_research
-    authority: authorized_agent
-    approval: none
+    authority: authorized_worker
+    approval: none_within_scope
   - action: draft_content
-    authority: authorized_agent
-    approval: before_external_publication
+    authority: authorized_worker
+    approval: before_external_publication_unless_exactly_preapproved
   - action: code_change
-    authority: authorized_agent
-    approval: review_before_merge
+    authority: authorized_worker
+    approval: required_review_before_merge
   - action: production_deployment
-    authority: human
+    authority: human_board
     approval: explicit_scoped
   - action: customer_message
-    authority: human
-    approval: explicit_or_preapproved_template
-  - action: spend
-    authority: human
-    approval: explicit_amount_vendor_period
+    authority: human_board
+    approval: explicit_or_exact_preapproved_scope
+  - action: public_publication
+    authority: human_board
+    approval: exact_artifact_and_channel
+  - action: new_spend
+    authority: human_board
+    approval: explicit_vendor_amount_period
+  - action: budget_increase
+    authority: human_board
+    approval: explicit
   - action: legal_commitment
-    authority: human
+    authority: human_board_with_qualified_advice
     approval: human_only
   - action: money_movement
-    authority: human
+    authority: human_board
     approval: human_only
   - action: destructive_operation
-    authority: human
+    authority: human_board
     approval: explicit_with_recovery_plan
+  - action: change_agent_permissions
+    authority: human_board
+    approval: explicit_and_audited

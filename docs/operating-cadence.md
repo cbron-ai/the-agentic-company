@@ -1,25 +1,15 @@
 # Operating Cadence
 
-A lightweight cadence keeps work visible without creating a meeting bureaucracy.
+The Board should not monitor every worker run. Muse summarizes exceptions and surfaces decisions that genuinely need Board attention.
 
-## Daily or per-run
-- What outcome is being pursued?
-- What changed since the last report?
-- What is blocked or uncertain?
-- What needs a human decision?
-- What cost or risk threshold is approaching?
+## Daily exception report
 
-## Weekly
-- Review customer and delivery outcomes.
-- Review open approvals, incidents, and quality issues.
-- Compare actual spend with budget.
-- Stop low-value work.
-- Choose a small number of measurable priorities.
+Include production/customer changes, blocked projects, pending approvals, crossed budget/risk thresholds, failures, containment actions, and unresolved uncertainty. Urgent issues go directly to the Board channel with an explicit urgent prefix; do not wait for the routine digest.
 
-## Monthly
-- Review offer-market evidence, revenue, margin, retention, and founder time.
-- Review agent permissions and vendor access.
-- Retire redundant roles and workflows.
-- Decide whether to continue, change, or stop each experiment.
+## Weekly Board memo
 
-Keep reports concise and link to evidence rather than reproducing every agent conversation.
+Review one scorecard per project: target, actual, customer evidence, spend, allocated cost, delivery quality, open risks, and next decision. Include Muse's recommendation and Claude's material challenge where appropriate.
+
+## Monthly portfolio review
+
+For each project decide continue, change, pause, or close. A continue decision needs a reason, next milestone, budget, and review date. Do not keep a project active because agents are busy.
