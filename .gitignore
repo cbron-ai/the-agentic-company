@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+private/
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/
+node_modules/
+dist/
+build/

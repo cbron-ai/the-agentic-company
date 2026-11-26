@@ -1,0 +1,11 @@
+version: 1
+currency: USD
+policy:
+  default_agent_spend: 0
+  require_human_approval_for_new_spend: true
+  require_human_approval_for_subscription_renewal: true
+  require_human_approval_for_budget_increase: true
+  alert_at_percent: 70
+  hard_stop_at_percent: 100
+  include_human_time_in_unit_economics: true
+  disclose_unmeasured_subscription_costs_as_estimates: true

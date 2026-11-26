@@ -1,0 +1,30 @@
+version: 1
+default_policy: require_human_approval_for_external_or_irreversible_actions
+rules:
+  - action: internal_research
+    authority: authorized_agent
+    approval: none
+  - action: draft_content
+    authority: authorized_agent
+    approval: before_external_publication
+  - action: code_change
+    authority: authorized_agent
+    approval: review_before_merge
+  - action: production_deployment
+    authority: human
+    approval: explicit_scoped
+  - action: customer_message
+    authority: human
+    approval: explicit_or_preapproved_template
+  - action: spend
+    authority: human
+    approval: explicit_amount_vendor_period
+  - action: legal_commitment
+    authority: human
+    approval: human_only
+  - action: money_movement
+    authority: human
+    approval: human_only
+  - action: destructive_operation
+    authority: human
+    approval: explicit_with_recovery_plan

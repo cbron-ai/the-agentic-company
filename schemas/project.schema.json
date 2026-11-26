@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://the-agentic-company.dev/schemas/project.schema.json",
+  "title": "Project Brief",
+  "type": "object",
+  "required": ["name", "humanOwner", "desiredOutcome", "scope", "acceptanceCriteria", "riskLevel"],
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "humanOwner": {"type": "string", "minLength": 1},
+    "desiredOutcome": {"type": "string", "minLength": 1},
+    "scope": {"type": "array", "items": {"type": "string"}},
+    "outOfScope": {"type": "array", "items": {"type": "string"}},
+    "acceptanceCriteria": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "riskLevel": {"enum": ["low", "medium", "high", "critical"]},
+    "budget": {"type": ["number", "null"], "minimum": 0},
+    "approvalGates": {"type": "array", "items": {"type": "string"}},
+    "stopCondition": {"type": "string"}
+  },
+  "additionalProperties": false
+}

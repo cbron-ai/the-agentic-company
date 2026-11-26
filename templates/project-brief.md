@@ -1,0 +1,22 @@
+# Project Brief
+
+- Project name:
+- Human owner:
+- Coordinator:
+- Status:
+- Desired outcome:
+- Target customer/user:
+- Problem and evidence:
+- Scope:
+- Out of scope:
+- Deliverables:
+- Acceptance criteria:
+- Dependencies:
+- Allowed tools/data:
+- Risk classification:
+- Budget and cost assumptions:
+- Approval gates:
+- Milestones:
+- Stop condition:
+- Success metrics:
+- Decision log:

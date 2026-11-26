@@ -1,0 +1,22 @@
+# Agent Role Definition
+
+- Role name:
+- Version:
+- Human owner:
+- Mission:
+- Non-goals:
+- Approved projects:
+- Allowed inputs/data:
+- Allowed tools/operations:
+- Prohibited actions:
+- Required input format:
+- Required output format:
+- Acceptance criteria:
+- Approval gates:
+- Escalation conditions:
+- Budget/rate limits:
+- Logging/evidence:
+- Stop/revoke procedure:
+- Evaluation cases:
+- Success metrics:
+- Review date:

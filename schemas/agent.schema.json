@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://the-agentic-company.dev/schemas/agent.schema.json",
+  "title": "Agent Role Contract",
+  "type": "object",
+  "required": ["name", "version", "humanOwner", "mission", "allowedTools", "prohibitedActions", "successMetrics"],
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "version": {"type": "string", "minLength": 1},
+    "humanOwner": {"type": "string", "minLength": 1},
+    "mission": {"type": "string", "minLength": 1},
+    "nonGoals": {"type": "array", "items": {"type": "string"}},
+    "allowedProjects": {"type": "array", "items": {"type": "string"}},
+    "allowedData": {"type": "array", "items": {"type": "string"}},
+    "allowedTools": {"type": "array", "items": {"type": "string"}},
+    "prohibitedActions": {"type": "array", "items": {"type": "string"}},
+    "approvalGates": {"type": "array", "items": {"type": "string"}},
+    "escalationConditions": {"type": "array", "items": {"type": "string"}},
+    "successMetrics": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
